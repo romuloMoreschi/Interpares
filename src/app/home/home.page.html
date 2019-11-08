@@ -2,14 +2,24 @@
 <h1>Comprometimento</h1>
 <ion-content>
 
+    <ion-slides >
+        <ion-slide type="any">
+            <app-notas pergunta="Discutiu todos os objetivos propostos ?" (notaClicked)="aoSelecionarNota($event)"></app-notas>
+            <app-notas pergunta="Participou ativamente dos encontros ?" (notaClicked)="aoSelecionarNota($event)"></app-notas>
+            <app-notas pergunta="Facilitou o aprendizado dos colegas ?" (notaClicked)="aoSelecionarNota($event)"></app-notas>
+            <app-notas pergunta="Realizou as atividades extra-sala ?" (notaClicked)="aoSelecionarNota($event)"></app-notas>
+            <app-notas pergunta="Buscou aprender em outros momentos ou com outras fontes de informação?" (notaClicked)="aoSelecionarNota($event)"></app-notas>
+        </ion-slide>
 
-<app-notas pergunta="Quantos anos você tem?" (notaClicked)="aoSelecionarNota($event)"></app-notas>
-<app-notas pergunta="Quantos anos você tem2?"></app-notas>
-<app-notas pergunta="Quantos anos você tem3?"></app-notas>
-<app-notas pergunta="Quantos anos você tem4?"></app-notas>
-<app-notas pergunta="Quantos anos você tem5?"></app-notas>
+    <ion-slide>
+        <h2>SLIDE 2</h2>
+    </ion-slide>
 
+    <ion-slide>
+        <h2>SLIDE 3</h2>
+    </ion-slide>
 
+  </ion-slides>
   
 
 
