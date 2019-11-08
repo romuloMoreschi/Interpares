@@ -1,6 +1,11 @@
+ion-content {
+    --background: #8B008B !important;
+}
 h1{
     text-align: center;
-    color: #4169E1;
+    color: white;
+    font-size: 40px;
+    border-bottom: 3px solid white;
 }
 #botao{
     font-size: 15px;
@@ -12,4 +17,7 @@ ion-slides{
 }
 app-notas{
     font-size: 12px;
+}
+div{
+    background-color: #8B008B;
 }
