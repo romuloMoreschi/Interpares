@@ -1,17 +1,50 @@
+<ion-content >
 
-<h1>Comprometimento</h1>
-<ion-content>
+    <ion-slides >
+        <ion-slide>
+            <div>
+                <h1>Comprometimento</h1>
+                <app-notas pergunta="Discutiu todos os objetivos propostos ?" (notaClicked)="aoSelecionarNota($event)"></app-notas>
+                <app-notas pergunta="Participou ativamente dos encontros ?" (notaClicked)="aoSelecionarNota($event)"></app-notas>
+                <app-notas pergunta="Facilitou o aprendizado dos colegas ?" (notaClicked)="aoSelecionarNota($event)"></app-notas>
+                <app-notas pergunta="Realizou as atividades extra-sala ?" (notaClicked)="aoSelecionarNota($event)"></app-notas>
+                <app-notas pergunta="Buscou aprender em outros momentos ou com outras fontes de informação ?" (notaClicked)="aoSelecionarNota($event)"></app-notas>
+            </div>
+        </ion-slide>
 
+        <ion-slide>
+            <div>
+                <h1>Informação</h1>
+                <app-notas pergunta="Adicionou informação adequada e relevante ?" (notaClicked)="aoSelecionarNota($event)"></app-notas>
+                <app-notas pergunta="Justifica as informações ?" (notaClicked)="aoSelecionarNota($event)"></app-notas>
+                <app-notas pergunta="Questiona fontes de informação ?" (notaClicked)="aoSelecionarNota($event)"></app-notas>
+                <app-notas pergunta="Utilizou fontes variadas atuais ?" (notaClicked)="aoSelecionarNota($event)"></app-notas>
+                <app-notas pergunta="Questiona a importância dos dados ?" (notaClicked)="aoSelecionarNota($event)"></app-notas>
+                <app-notas pergunta="Citou todas as fontes das informações ?" (notaClicked)="aoSelecionarNota($event)"></app-notas>
+            </div>
+        </ion-slide>
 
-<app-notas pergunta="Quantos anos você tem?" (notaClicked)="aoSelecionarNota($event)"></app-notas>
-<app-notas pergunta="Quantos anos você tem2?"></app-notas>
-<app-notas pergunta="Quantos anos você tem3?"></app-notas>
-<app-notas pergunta="Quantos anos você tem4?"></app-notas>
-<app-notas pergunta="Quantos anos você tem5?"></app-notas>
+        <ion-slide>
+            <div>
+                <h1>Colaboração</h1>
+                <app-notas pergunta="Comunicou-se de forma clara e objetiva ?" (notaClicked)="aoSelecionarNota($event)"></app-notas>
+                <app-notas pergunta="Interagiu com o grupo ?" (notaClicked)="aoSelecionarNota($event)"></app-notas>
+                <app-notas pergunta="Sintetizou as informações ?" (notaClicked)="aoSelecionarNota($event)"></app-notas>
+                <app-notas pergunta="Buscou explicar as informações e desfazer situações de conflito ?" (notaClicked)="aoSelecionarNota($event)"></app-notas>
+                <app-notas pergunta="Auxiliou no processo de aprendizagem dos demais ?" (notaClicked)="aoSelecionarNota($event)"></app-notas>
+            </div>
+        </ion-slide>
 
-
-  
-
-
-    <button id="botao" >Enviar </button>
+        <ion-slide>
+            <div>
+                <h1>Senso crítico</h1>
+                <app-notas pergunta="Promove estudo dos pontos discutidos durante as aulas ?" (notaClicked)="aoSelecionarNota($event)"></app-notas>
+                <app-notas pergunta="Reconhece habilidades e deficiências ?" (notaClicked)="aoSelecionarNota($event)"></app-notas>
+                <app-notas pergunta="Aceita facilmente a crítica ?" (notaClicked)="aoSelecionarNota($event)"></app-notas>
+                <app-notas pergunta="Identifica meios de resolver suas deficiências ?" (notaClicked)="aoSelecionarNota($event)"></app-notas>
+                <app-notas pergunta="Demonstra mudança efetiva nas correções das deficiências ?" (notaClicked)="aoSelecionarNota($event)"></app-notas>
+                <ion-button size="block" id="botao" >Enviar </ion-button>
+            </div>
+        </ion-slide>
+    </ion-slides>
 </ion-content>
