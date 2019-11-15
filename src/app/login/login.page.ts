@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AutenticarService } from '../services/autenticar.service';
 
 @Component({
   selector: 'app-login',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginPage implements OnInit {
 
-  constructor() { }
+  constructor(private autenticarService: AutenticarService) { }
 
+  
   ngOnInit() {
+    
   }
 
+  botaoAutenticar(usuario, senha){
+    var response = this.autenticarService.autenticarUsuario(usuario,senha);
+  }
 }
