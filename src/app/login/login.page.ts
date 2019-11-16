@@ -1,21 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { AutenticarService } from '../services/autenticar.service';
+import { HomePage } from '../home/home.page';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.page.html',
   styleUrls: ['./login.page.scss'],
 })
-export class LoginPage implements OnInit {
+export class LoginPage {
+
+  usuario;
+  senha;
 
   constructor(private autenticarService: AutenticarService) { }
 
-  
-  ngOnInit() {
-    
-  }
+  login(){
 
-  botaoAutenticar(usuario, senha){
-    var response = this.autenticarService.autenticarUsuario(usuario,senha);
+    var userAutenticado = this.autenticarService.autenticarUsuario(this.usuario, this.senha);
+
+    console.log(userAutenticado);
   }
 }

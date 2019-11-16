@@ -9,11 +9,9 @@ export class AutenticarService {
   constructor(private http: HttpClient) { }
 
   autenticarUsuario(usuario: string, senha: string) {
-    return this.http.post(`http://localhost:8100/login`, String).subscribe((retorno)=> {
-
-      alert(retorno)
+    return this.http.get(`http://localhost:44398/api/TodoLogin`).subscribe((retorno)=> {
     });
   }
-
-
+   /*return this.http.post(`https://localhost:44398/api/TodoLogin`, Boolean).subscribe((retorno)=> {
+    });*/
 }
