@@ -17,7 +17,7 @@ export class LoginPage {
   login(){
 
     var userAutenticado = this.autenticarService.autenticarUsuario(this.usuario, this.senha);
-
+    
     console.log(userAutenticado);
   }
 }
