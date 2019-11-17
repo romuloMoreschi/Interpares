@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Cadastro
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-slides>
+    <ion-slide>
+      <div class="slide-inner ion-padding">
+
+        <ion-item class="ion-margin-top" lines="none">
+            <ion-input type="user" [(ngModel)]="name" placeholder="Nome"></ion-input>
+        </ion-item>
+        
+        <ion-item class="ion-margin-top" lines="none">
+            <ion-input type="user" [(ngModel)]="usuario" placeholder="Usuario"></ion-input>
+        </ion-item>
+
+        <ion-item class="ion-margin-top" lines="none">
+          <ion-input type="password" [(ngModel)]="senha" placeholder="Senha"></ion-input>
+        </ion-item>
+
+        <ion-button class="ion-margin-top"  ion-button (click) = "cadastrar()" color="secondary" fill="outline" >
+          Cadastrar
+        </ion-button>
+
+      </div>
+    </ion-slide>
+  </ion-slides>

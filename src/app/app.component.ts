@@ -35,12 +35,22 @@ export class AppComponent {
       {
         title : "Home",
         url   : "/home",
-        icon  : "home"
+        icon  : "ios-home"
       },
       {
         title : "Perguntas",
         url   : "/perguntas",
         icon  : "chatboxes"
+      },
+      {
+        title : "Cadastro",
+        url   : "/cadastro",
+        icon  : "md-person-add"
+      },
+      {
+        title : "Sair",
+        url   : "/login",
+        icon  : "md-arrow-back"
       },
     ]
   }
