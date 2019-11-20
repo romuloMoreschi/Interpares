@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="dark">
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
@@ -9,26 +9,43 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-slides>
-    <ion-slide>
-      <div class="slide-inner ion-padding">
+<ion-content>
+  <div class="container">
+    <div class="container-top">
 
-        <ion-item class="ion-margin-top" lines="none">
-            <ion-input type="user" [(ngModel)]="name" placeholder="Nome"></ion-input>
-        </ion-item>
+      <ion-item class="item" lines="none">
+        <ion-input type="user" [(ngModel)]="name" placeholder="Nome"></ion-input>
+      </ion-item>
+
+      <ion-item class="item" lines="none">
+        <ion-input type="user" [(ngModel)]="usuario" placeholder="Usuario"></ion-input>
+      </ion-item>
+
+      <ion-item class="item" lines="none">
+        <ion-input type="password" [(ngModel)]="senha" placeholder="Senha"></ion-input>
+      </ion-item>
+
+      <ion-button color="light" fill="outline">Cadastrar aluno</ion-button>
+
+    </div>
+
+
+      <div class="container-bottom">
+
+          <ion-list>
+              <ion-item lines="none">
+                <ion-label>Aluno</ion-label>
+                <ion-select placeholder="Select One">
+                  <ion-select-option value="aluno">Guilherme</ion-select-option>
+                  <ion-select-option value="aluno">Marcela</ion-select-option>
+                  <ion-select-option value="aluno">Romulo</ion-select-option>
+                  <ion-select-option value="aluno">Luiz</ion-select-option>
+                </ion-select>
+              </ion-item>
+          </ion-list>
         
-        <ion-item class="ion-margin-top" lines="none">
-            <ion-input type="user" [(ngModel)]="usuario" placeholder="Usuario"></ion-input>
-        </ion-item>
-
-        <ion-item class="ion-margin-top" lines="none">
-          <ion-input type="password" [(ngModel)]="senha" placeholder="Senha"></ion-input>
-        </ion-item>
-
-        <ion-button class="ion-margin-top"  ion-button (click) = "cadastrar()" color="secondary" fill="outline" >
-          Cadastrar
-        </ion-button>
-
+          <ion-button id="btn" color="light" fill="outline">Cadastrar Grupo</ion-button>
+        
       </div>
-    </ion-slide>
-  </ion-slides>
+    </div>
+</ion-content>

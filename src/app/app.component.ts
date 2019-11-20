@@ -48,6 +48,11 @@ export class AppComponent {
         icon  : "md-person-add"
       },
       {
+        title : "Relatório",
+        url   : "/relatorio",
+        icon  : "list-box"
+      },
+      {
         title : "Sair",
         url   : "/login",
         icon  : "md-arrow-back"
