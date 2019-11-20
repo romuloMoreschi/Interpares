@@ -7,9 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CadastroPage implements OnInit {
 
+  numero1;
+
   constructor() { }
 
   ngOnInit() {
   }
-
 }

@@ -1,0 +1,31 @@
+ion-content {
+    --background: #673BB7;
+}
+table{
+    background-color: white;
+    border: solid;
+    width: 80%;
+    left: 0; right: 0;
+    margin: auto;
+    text-align: center;
+
+    tr{
+        border: solid;
+    }
+    td{
+        border: solid;
+    }
+    th{
+        border: solid;
+    }
+}
+.top{
+    width: 80%;
+    left: 0; right: 0;
+    margin: auto;
+    text-align: center;
+}
+.list-md{
+    margin-top: 5%;
+    border-radius: 10px;
+}

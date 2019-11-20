@@ -9,7 +9,6 @@ ion-content {
     text-align: center;
 }
 ion-item{
-    margin-top: 3%;
     --border-radius: 10px;
     border-bottom: 1px solid #673BB7;
 
@@ -26,6 +25,8 @@ ion-item{
     text-align: center;
     width: 80%;
 }
-ion-list {
+.list-md{
+    margin-bottom: 2px;
     border-radius: 10px;
+    height: 60px;
 }
