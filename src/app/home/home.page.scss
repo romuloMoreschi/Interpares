@@ -7,6 +7,8 @@ ion-content {
 h1{
   color: white;
   text-align: center;
+  margin-top: 50%;
+  top: 0; right: 0; left: 0; bottom: 0;
 }
 p{
   position:absolute;
@@ -14,5 +16,5 @@ p{
   width:100%;
   color: white;
   text-align: center;
-  font-size: 15px;
+  font-size: 14px;
 }
