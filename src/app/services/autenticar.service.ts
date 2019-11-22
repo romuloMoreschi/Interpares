@@ -10,7 +10,7 @@ export class AutenticarService {
 
   constructor(private http: HttpClient) { }
 
-  autenticaUser(): Observable<any>{
-    return this.http.get('http://localhost:55267/api/TodoLogin');
+  autenticaUser(name): Observable<any>{
+    return this.http.get('http://localhost:55267/api/TodoLogin/'+name);
   }
 }

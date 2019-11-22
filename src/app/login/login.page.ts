@@ -18,17 +18,20 @@ export class LoginPage implements OnInit {
 
   constructor(private autenticarService: AutenticarService, public navCtrl: NavController,) { }
 
+  myJSON: any;
+
   ngOnInit(){
   }
 
-  private user = "admin";
-  private pass = "admin";
-
   login(){
-    if(this.usuario == this.user && this.senha == this.pass){
+    this.autenticarService.autenticaUser(this.usuario).subscribe((data)=> {
+      this.myJSON = JSON.stringify(data);
+      console.log(this.myJSON);
+    })
+    if(this.myJSON == true){
       this.navCtrl.navigateForward('home');
     }else{
-      alert("Senha ou usuario invalido");
+      alert("Usuario ou senha incorreta");
     }
   }
 }
