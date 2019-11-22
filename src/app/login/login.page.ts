@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { AutenticarService } from '../services/autenticar.service';
-import { Observable } from 'rxjs';
+import { Observable, from } from 'rxjs';
+import { NavController } from '@ionic/angular';
+
 
 @Component({
   selector: 'app-login',
@@ -9,24 +11,23 @@ import { Observable } from 'rxjs';
 })
 export class LoginPage implements OnInit {
 
-  name;
-  password;
+  usuario
 
-  constructor(private autenticarService: AutenticarService) { }
-  allLogins: Observable<any>;
+
+  constructor(private autenticarService: AutenticarService, public navCtrl: NavController,) { }
 
   ngOnInit(){
   }
 
-  login(){
 
+  login(){
     this.autenticarService.autenticaUser().subscribe((data)=> {
 
       console.log(data);
 
     });
-
-   
-
   }
 }
+/*if(data){
+  this.navCtrl.navigateForward('home');
+}*/
