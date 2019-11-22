@@ -20,9 +20,13 @@ export class LoginPage implements OnInit {
 
   login(){
 
-    this.allLogins = this.autenticarService.autenticaUser();
+    this.autenticarService.autenticaUser().subscribe((data)=> {
 
-    console.log(this.allLogins);
+      console.log(data);
+
+    });
+
+   
 
   }
 }
