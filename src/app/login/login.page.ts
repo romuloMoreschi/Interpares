@@ -19,16 +19,23 @@ export class LoginPage implements OnInit {
   constructor(private autenticarService: AutenticarService, public navCtrl: NavController,) { }
 
   myJSON: any;
+  admin: any = "administrador"
+  password: any = 12345
 
   ngOnInit(){
   }
 
   login(){
-    this.autenticarService.autenticaUser(this.usuario).subscribe((data)=> {
+    /*this.autenticarService.autenticaUser(this.usuario).subscribe((data)=> {
       this.myJSON = JSON.stringify(data);
       console.log(this.myJSON);
     })
     if(this.myJSON == true){
+      this.navCtrl.navigateForward('home');
+    }else{
+      alert("Usuario ou senha incorreta");
+    }*/
+    if(this.usuario == this.admin && this.senha == this.password){
       this.navCtrl.navigateForward('home');
     }else{
       alert("Usuario ou senha incorreta");
