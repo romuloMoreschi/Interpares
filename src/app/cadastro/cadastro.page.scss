@@ -1,0 +1,32 @@
+ion-content {
+    --background: #673BB7;
+}
+.container{
+    width: 80%;
+    height: 100%;
+    left: 0; right: 0;
+    margin: auto;
+    text-align: center;
+}
+ion-item{
+    --border-radius: 10px;
+    border-bottom: 1px solid #673BB7;
+
+}
+.container-top{
+    margin-top: 20%;
+
+}
+.container-bottom{
+    position: absolute;
+    bottom: 0;
+    left: 0; right: 0;
+    margin: auto;
+    text-align: center;
+    width: 80%;
+}
+.list-md{
+    margin-bottom: 2px;
+    border-radius: 10px;
+    height: 60px;
+}

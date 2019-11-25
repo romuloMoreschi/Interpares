@@ -1,6 +1,4 @@
 import { Component, ViewChild } from '@angular/core';
-import { NotasComponent } from '../component/notas/notas.component';
-
 
 
 @Component({
@@ -10,13 +8,6 @@ import { NotasComponent } from '../component/notas/notas.component';
 })
 export class HomePage {
 
-
-
-
   constructor() {}
-
-  aoSelecionarNota(nota: any){
-    console.log(nota);
-  }
 
 }

@@ -1,1 +1,20 @@
-
+.my-custom-menu {
+    --width: 500px;
+  }
+ion-content {
+    --background: #673BB7;
+}
+h1{
+  color: white;
+  text-align: center;
+  margin-top: 50%;
+  top: 0; right: 0; left: 0; bottom: 0;
+}
+p{
+  position:absolute;
+  bottom:0;
+  width:100%;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+}
