@@ -3,6 +3,7 @@ import { AutenticarService } from '../services/autenticar.service';
 import { Observable, from } from 'rxjs';
 import { NavController } from '@ionic/angular';
 import { SourceAndMapMixin } from 'webpack-sources';
+import { Keyboard } from '@ionic-native/keyboard/ngx';
 
 
 @Component({
@@ -16,7 +17,7 @@ export class LoginPage implements OnInit {
   senha 
 
 
-  constructor(private autenticarService: AutenticarService, public navCtrl: NavController,) { }
+  constructor(private autenticarService: AutenticarService, public navCtrl: NavController, private keyboard: Keyboard) { }
 
   myJSON: any;
 
