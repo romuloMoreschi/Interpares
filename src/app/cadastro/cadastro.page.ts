@@ -7,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CadastroPage implements OnInit {
 
-  numero1;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  aoSelecionar(numero: any){
+    console.log(numero);
   }
 }

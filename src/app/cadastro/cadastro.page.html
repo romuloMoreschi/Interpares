@@ -40,24 +40,17 @@
               <ion-item lines="none">
                 <ion-label>Numero de alunos</ion-label>
                 <ion-select placeholder="Selecione">
-                  <ion-select-option value="numero1">1</ion-select-option>
-                  <ion-select-option value="numero2">2</ion-select-option>
-                  <ion-select-option value="numero3">3</ion-select-option>
-                  <ion-select-option value="numero4">4</ion-select-option>
-                  <ion-select-option value="numero5">5</ion-select-option>
+                  <ion-select-option value="1"(grupoClicked)="aoSelecionar($event)">1</ion-select-option>
+                  <ion-select-option value="2"(grupoClicked)="aoSelecionar($event)">2</ion-select-option>
+                  <ion-select-option value="3"(grupoClicked)="aoSelecionar($event)">3</ion-select-option>
+                  <ion-select-option value="4"(grupoClicked)="aoSelecionar($event)">4</ion-select-option>
+                  <ion-select-option value="5"(grupoClicked)="aoSelecionar($event)">5</ion-select-option>
                 </ion-select>
               </ion-item>
           </ion-list>
 
-        <div *ngFor="">
-          <ion-list>
-              <ion-item lines="none">
-                <ion-label>Aluno</ion-label>
-                <ion-select placeholder="Selecione">
-                  <ion-select-option value="aluno">{{aluno}}</ion-select-option>
-                </ion-select>
-              </ion-item>
-          </ion-list>
+        <div *ngFor="grupoClicked">
+          <app-grupo></app-grupo>
         </div>
 
           <ion-item class="item" lines="none">
