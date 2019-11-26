@@ -1,0 +1,57 @@
+<ion-header>
+    <ion-toolbar color="dark">
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Perguntas</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-slides >
+    <ion-slide>
+        <div>
+            <h1>Comprometimento</h1>
+            <app-notas class="perguntas" pergunta="Discutiu todos os objetivos propostos ?" (notaClicked)="aoSelecionarNota($event)"></app-notas>
+            <app-notas class="perguntas" pergunta="Participou ativamente dos encontros ?" (notaClicked)="aoSelecionarNota($event)"></app-notas>
+            <app-notas class="perguntas" pergunta="Facilitou o aprendizado dos colegas ?" (notaClicked)="aoSelecionarNota($event)"></app-notas>
+            <app-notas class="perguntas" pergunta="Realizou as atividades extra-sala ?" (notaClicked)="aoSelecionarNota($event)"></app-notas>
+            <app-notas class="perguntas" pergunta="Buscou aprender em outros momentos ou com outras fontes de informação ?" (notaClicked)="aoSelecionarNota($event)"></app-notas>
+        </div>
+    </ion-slide>
+
+    <ion-slide>
+        <div>
+            <h1>Informação</h1>
+            <app-notas class="perguntas" pergunta="Adicionou informação adequada e relevante ?" (notaClicked)="aoSelecionarNota($event)"></app-notas>
+            <app-notas class="perguntas" pergunta="Justifica as informações ?" (notaClicked)="aoSelecionarNota($event)"></app-notas>
+            <app-notas class="perguntas" pergunta="Questiona fontes de informação ?" (notaClicked)="aoSelecionarNota($event)"></app-notas>
+            <app-notas class="perguntas" pergunta="Questiona a importância dos dados ?" (notaClicked)="aoSelecionarNota($event)"></app-notas>
+            <app-notas class="perguntas" pergunta="Citou todas as fontes das informações ?" (notaClicked)="aoSelecionarNota($event)"></app-notas>
+        </div>
+    </ion-slide>
+
+    <ion-slide>
+        <div>
+            <h1>Colaboração</h1>
+            <app-notas class="perguntas" pergunta="Comunicou-se de forma clara e objetiva ?" (notaClicked)="aoSelecionarNota($event)"></app-notas>
+            <app-notas class="perguntas" pergunta="Interagiu com o grupo ?" (notaClicked)="aoSelecionarNota($event)"></app-notas>
+            <app-notas class="perguntas" pergunta="Sintetizou as informações ?" (notaClicked)="aoSelecionarNota($event)"></app-notas>
+            <app-notas class="perguntas" pergunta="Buscou explicar as informações e desfazer situações de conflito ?" (notaClicked)="aoSelecionarNota($event)"></app-notas>
+            <app-notas class="perguntas" pergunta="Auxiliou no processo de aprendizagem dos demais ?" (notaClicked)="aoSelecionarNota($event)"></app-notas>
+        </div>
+    </ion-slide>
+
+    <ion-slide>
+        <div>
+            <h1>Senso crítico</h1>
+            <app-notas class="perguntas" pergunta="Promove estudo pontos discutidos durante as aulas ?" (notaClicked)="aoSelecionarNota($event)"></app-notas>
+            <app-notas class="perguntas" pergunta="Reconhece habilidades e deficiências ?" (notaClicked)="aoSelecionarNota($event)"></app-notas>
+            <app-notas class="perguntas" pergunta="Aceita facilmente a crítica ?" (notaClicked)="aoSelecionarNota($event)"></app-notas>
+            <app-notas class="perguntas" pergunta="Identifica meios de resolver suas deficiências ?" (notaClicked)="aoSelecionarNota($event)"></app-notas>
+            <ion-button size="block" color="dark" id="botao" >Enviar </ion-button>
+        </div>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

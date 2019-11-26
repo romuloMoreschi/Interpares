@@ -1,6 +1,6 @@
-/*ion-content {
-    --background: gray !important;
-}*/
+ion-content {
+    --background: #673BB7;
+}
 .container {
     position: absolute;
     left: 0;
@@ -10,10 +10,13 @@
     z-index: 2;
 
     &.top {
-        top: 5%;
+        top: 5%; left: 0; right: 0;
+        margin: auto;
+        text-align: center;
+        width: 50%;
     }
     ion-segment-button{
-        --indicator-color-checked: #00BFFF;
+        --indicator-color-checked: #673BB7;
     }
 }
 ion-slides{
@@ -22,13 +25,17 @@ ion-slides{
 
     .slide-inner{
         width: 75%;
-        color: #00BFFF;
+        color: #673BB7;
         border-radius: 10px;
 
         ion-item{
             --border-radius: 10px;
-            border-bottom: 1px solid #00BFFF;
+            border-bottom: 1px solid #673BB7;
 
         }
     }
+}
+span{
+    color: white;
+    font-size: 22px;
 }
