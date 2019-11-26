@@ -13,7 +13,7 @@ import { SourceAndMapMixin } from 'webpack-sources';
 export class LoginPage implements OnInit {
 
   usuario
-  senha
+  senha 
 
 
   constructor(private autenticarService: AutenticarService, public navCtrl: NavController,) { }
@@ -27,11 +27,12 @@ export class LoginPage implements OnInit {
     this.autenticarService.autenticaUser(this.usuario).subscribe((data)=> {
       this.myJSON = JSON.stringify(data);
       console.log(this.myJSON);
-    })
-    if(this.myJSON == true){
+      
+    if(this.myJSON == "true"){
       this.navCtrl.navigateForward('home');
     }else{
       alert("Usuario ou senha incorreta");
     }
+    })
   }
 }
