@@ -49,9 +49,18 @@
               </ion-item>
           </ion-list>
 
-        <div *ngFor="grupoClicked">
-          <app-grupo></app-grupo>
-        </div>
+          <ion-list>
+            <ion-item lines="none">
+              <ion-label>Aluno</ion-label>
+              <ion-select placeholder="Selecione">
+                <ion-select-option value="aluno">Romulo</ion-select-option>
+                <ion-select-option value="aluno">Guilherme</ion-select-option>
+                <ion-select-option value="aluno">Marcela</ion-select-option>
+                <ion-select-option value="aluno">Luiz</ion-select-option>
+                <ion-select-option value="aluno">Wesley</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </ion-list>
 
           <ion-item class="item" lines="none">
               <ion-input type="text" [(ngModel)]="nomeGrup" placeholder="Nome do Grupo"></ion-input>

@@ -15,22 +15,39 @@
     <ion-list>
         <ion-item lines="none">
           <ion-label>Grupo</ion-label>
-          <ion-select placeholder="Select One">
-            <ion-select-option value="grupo">{{grupo}}</ion-select-option>
+          <ion-select [(ngModel)]="data" placeholder="Select One">
+            <ion-select-option value="Interpares">Interpares</ion-select-option>
+            <ion-select-option value="CalculadoraPenal">CalculadoraPenal</ion-select-option>
           </ion-select>
         </ion-item>
     </ion-list>
     <ion-button id="btn" color="light" ion-button (click) = "selecionarGrupo(this)" fill="outline">Selecionar</ion-button>
   </div>
 
-<div *ngIf="resul">
+<div *ngIf="Nota">
   <table >
     <tr>
       <th>Aluno</th>
       <th>Nota</th>
     </tr>
-    <tr>
-      <td>{{Aluno}}</td>
+    <tr *ngIf="Aluno">
+      <td >{{Aluno}}</td>
+      <td>{{Nota}}</td>
+    </tr>
+    <tr *ngIf="Aluno1">
+      <td>{{Aluno1}}</td>
+      <td>{{Nota}}</td>
+    </tr>
+    <tr *ngIf="Aluno2">
+      <td>{{Aluno2}}</td>
+      <td>{{Nota}}</td>
+    </tr>
+    <tr *ngIf="Aluno3">
+      <td>{{Aluno3}}</td>
+      <td>{{Nota}}</td>
+    </tr>
+    <tr *ngIf="Aluno4">
+      <td>{{Aluno4}}</td>
       <td>{{Nota}}</td>
     </tr>
   </table>
